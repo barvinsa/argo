@@ -13,13 +13,13 @@ spec:
     name: reviews
   strategy:
     canary:
-      # analysis:
-      #   templates:
-      #   - templateName: apdex
-      #   startingStep: 2
-      #   args:
-      #   - name: service-name
-      #     value: canary|reviews|bookinfo|cp-cluster-1|-
+      analysis:
+        templates:
+        - templateName: apdex
+        startingStep: 2
+        args:
+        - name: service-name
+          value: canary|reviews|bookinfo|cp-cluster-1|-
       canaryMetadata:
         annotations:
           version: canary
