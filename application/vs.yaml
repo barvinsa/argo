@@ -26,8 +26,11 @@ spec:
         exact: /logout
     - uri:
         prefix: /api/v1/products
+    - uri:
+        prefix: /abc
     route:
     - destination:
         host: productpage
         port:
+
           number: 9080
